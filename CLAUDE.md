@@ -107,3 +107,63 @@
 - `drafts/README.md`
 - `canon/README.md`
 - `_schema/`（JSON Schema 文件目录）
+
+## 术语表
+
+### 流程术语
+- `Plan`：规划阶段，定义目标章节、约束、依赖与必须推进项。
+- `Draft`：起草阶段，在 `drafts/` 生成候选正文和候选事实。
+- `Preflight`：提交前一致性检查阶段，决定是否允许入典。
+- `Commit`：入典阶段，将通过检查的内容写入正式目录并记录日志。
+
+### 判定术语
+- `PASS`：通过预检，可执行 commit。
+- `BLOCKED`：预检失败，禁止 commit，必须先修复。
+- `PASS_WITH_RETCON`：允许提交，但属于设定修订流程，必须记 retcon 日志。
+- `retcon`：对既有 canon 的追认修订（通常用于修复硬冲突）。
+
+### 结构术语
+- `Arc`：剧情弧（一个中期叙事阶段），由多个章节组成。
+- `Chapter`：章节，最小提交单元。
+- `Scene`：场景，章节内部的推进单元。
+- `outline`：结构真相源，定义 Arc/Chapter 的目标与依赖。
+- `canon`：已确认的正式内容（正文与结构化事实）。
+
+### ID 与状态术语
+- `arc_id`：Arc 唯一标识，建议形如 `arc-001`。
+- `chapter_id`：Chapter 唯一标识，建议形如 `ch-001`。
+- 章节状态：`planned`（已规划）、`in_progress`（写作中）、`draft_done`（草稿完成）、`finalized`（已入典）。
+- Arc 状态：`planned`、`in_progress`、`completed`、`on_hold`。
+
+### 连续性术语
+- `dependency`：章节依赖，表示某章节必须在本章之前完成。
+- `key_characters`：本章必须重点推进的角色集合。
+- `required_threads`：本章必须推进/回收的线程集合。
+- `thread`：伏笔/承诺/谜团的追踪单元。
+- `open thread`：尚未回收的线程。
+- `resolved thread`：已回收并闭环的线程。
+
+### 角色与世界术语
+- 角色一致性：角色动机、能力、关系、行为轨迹不发生无依据突变。
+- 世界一致性：世界规则、地点、势力逻辑不被新内容破坏。
+- 时间线一致性：事件先后和因果链条可成立。
+
+### 状态与日志术语
+- `current_status.md`：唯一实时全局状态文件。
+- `status/history/`：状态历史快照目录。
+- `status_history.json`：状态快照索引。
+- `mutations.jsonl`：关键变更审计日志（逐行 JSON）。
+- `retcons.jsonl`：retcon 审计日志（逐行 JSON）。
+
+### 技能术语
+- `outline-keeper`：维护大纲结构与章节依赖。
+- `character-weaver`：维护角色档案、角色关系与角色上下文。
+- `world-continuity`：维护世界规则并检查设定冲突。
+- `session-status-manager`：维护当前状态与历史快照。
+- `chapter-preflight`：执行提交前一致性闸门。
+- `canon-committer`：将通过预检内容入典并写审计日志。
+
+### Schema 术语
+- `$schema`：JSON 文件内指向其 schema 的相对路径字段。
+- `_schema/`：schema 定义目录。
+- `JSONL`：逐行 JSON 文本格式，一行一个对象。
