@@ -8,9 +8,9 @@
 - 防止章节内容违反硬设定
 
 ## 读取文件
-- `.book/world/`
-- `.book/chapters/`
-- `.book/timeline/`
+- `world/`
+- `chapters/`
+- `timeline/`
 
 ## 执行步骤
 1. 提取涉及规则（能力边界、资源限制、政治约束等）。

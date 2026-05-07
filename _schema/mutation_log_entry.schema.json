@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "./mutation_log_entry.schema.json",
   "title": "MutationLogEntry",
-  "description": "Per-line schema for .book/logs/mutations.jsonl entries.",
+  "description": "Per-line schema for logs/mutations.jsonl entries.",
   "type": "object",
   "required": ["ts", "skill", "action", "targets", "retcon"],
   "properties": {

@@ -8,10 +8,10 @@
 - 追加历史快照，支持跨会话恢复
 
 ## 读取文件
-- `.book/status/current_status.md`
-- `.book/status/history/`
-- `.book/logs/status_history.json`
-- `.book/logs/mutations.jsonl`
+- `status/current_status.md`
+- `status/history/`
+- `logs/status_history.json`
+- `logs/mutations.jsonl`
 
 ## 执行步骤
 1. 基于最新章节/时间线更新 `current_status.md`。

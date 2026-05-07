@@ -1,6 +1,6 @@
 # Novel Skills Pack（单书版）
 
-本目录包含 6 个技能，面向单书小说项目，数据根目录固定为 `.book/`。
+本目录包含 6 个技能，面向单书小说项目
 
 ## 技能列表
 - `outline-keeper`: 大纲守护（Arc -> Chapter）

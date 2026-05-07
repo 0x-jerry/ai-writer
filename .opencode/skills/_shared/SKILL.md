@@ -1,9 +1,5 @@
 # 共享规范（所有技能必须遵守）
 
-## 作用范围
-- 数据根目录固定为 `.book/`
-- 本项目仅服务一本小说
-
 ## 标准输入
 - `chapter_id`（可选，但章节相关任务必须提供）
 - `task_goal`（当前会话目标）
@@ -22,5 +18,5 @@
   - 当 `retcon=true`：允许继续，但必须写入 `retcons` 日志
 
 ## 日志约束
-- 重要变更必须记录到 `.book/logs/mutations.jsonl`
-- retcon 必须记录到 `.book/logs/retcons.jsonl`
+- 重要变更必须记录到 `logs/mutations.jsonl`
+- retcon 必须记录到 `logs/retcons.jsonl`

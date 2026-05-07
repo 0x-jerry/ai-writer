@@ -8,10 +8,10 @@
 - 给当前章节返回角色上下文约束
 
 ## 读取文件
-- `.book/characters/`
-- `.book/relationships/`
-- `.book/timeline/`
-- `.book/outline/chapters/`
+- `characters/`
+- `relationships/`
+- `timeline/`
+- `outline/chapters/`
 
 ## 执行步骤
 1. 汇总角色当前状态（目标、秘密、冲突、最近事件）。

@@ -8,17 +8,17 @@
 - 记录完整审计轨迹
 
 ## 读取文件
-- `.book/drafts/`
-- `.book/chapters/`
-- `.book/timeline/`
-- `.book/status/`
-- `.book/logs/mutations.jsonl`
-- `.book/logs/retcons.jsonl`
+- `drafts/`
+- `chapters/`
+- `timeline/`
+- `status/`
+- `logs/mutations.jsonl`
+- `logs/retcons.jsonl`
 
 ## 执行步骤
 1. 要求先有 preflight 结果（`PASS` 或 `PASS_WITH_RETCON`）。
-2. 将章节草稿写入 `.book/chapters/`。
-3. 抽取关键事件更新 `.book/timeline/`。
+2. 将章节草稿写入 `chapters/`。
+3. 抽取关键事件更新 `timeline/`。
 4. 触发状态更新（`current_status.md` + history）。
 5. 写入 mutation 日志；若 retcon，则写 retcon 日志。
 

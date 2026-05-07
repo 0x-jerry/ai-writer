@@ -8,12 +8,12 @@
 - 输出最小修复建议
 
 ## 读取文件
-- `.book/outline/`
-- `.book/characters/`
-- `.book/world/`
-- `.book/timeline/`
-- `.book/threads/`
-- `.book/drafts/` 或待提交草稿
+- `outline/`
+- `characters/`
+- `world/`
+- `timeline/`
+- `threads/`
+- `drafts/` 或待提交草稿
 
 ## 检查清单
 1. 大纲一致性：是否达成章节目标、是否越级推进。

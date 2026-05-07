@@ -25,7 +25,7 @@
           },
           "snapshot_file": {
             "type": "string",
-            "description": "Path to snapshot markdown under .book/status/history/."
+            "description": "Path to snapshot markdown under status/history/."
           },
           "chapter_id": {
             "description": "Related chapter ID, or null when not tied to a chapter.",
