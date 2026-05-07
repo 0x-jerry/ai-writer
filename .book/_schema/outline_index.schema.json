@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./outline_index.schema.json",
+  "title": "OutlineIndex",
+  "description": "Arc/Chapter structure index for the single-book project. Used for dependency checks and chapter planning.",
+  "type": "object",
+  "required": ["$schema", "arcs", "chapters", "updated_at"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Relative path to this schema file."
+    },
+    "arcs": {
+      "type": "array",
+      "description": "List of all story arcs in the book.",
+      "items": {
+        "type": "object",
+        "description": "Single arc summary entry.",
+        "required": ["arc_id", "title", "status"],
+        "properties": {
+          "arc_id": {
+            "type": "string",
+            "pattern": "^arc-[a-zA-Z0-9_-]+$",
+            "description": "Unique arc identifier."
+          },
+          "title": {
+            "type": "string",
+            "description": "Human-readable arc title."
+          },
+          "status": {
+            "type": "string",
+            "enum": ["planned", "in_progress", "completed", "on_hold"],
+            "description": "Current lifecycle status of the arc."
+          },
+          "start_chapter_id": {
+            "type": ["string", "null"],
+            "description": "First chapter in this arc, if known."
+          },
+          "end_chapter_id": {
+            "type": ["string", "null"],
+            "description": "Last chapter in this arc, if known."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "description": "List of all chapter planning entries.",
+      "items": {
+        "type": "object",
+        "description": "Single chapter planning/index entry.",
+        "required": ["chapter_id", "arc_id", "title", "status", "dependencies"],
+        "properties": {
+          "chapter_id": {
+            "type": "string",
+            "pattern": "^ch-[a-zA-Z0-9_-]+$",
+            "description": "Unique chapter identifier."
+          },
+          "arc_id": {
+            "type": "string",
+            "pattern": "^arc-[a-zA-Z0-9_-]+$",
+            "description": "Owning arc identifier."
+          },
+          "title": {
+            "type": "string",
+            "description": "Human-readable chapter title."
+          },
+          "status": {
+            "type": "string",
+            "enum": ["planned", "in_progress", "draft_done", "finalized"],
+            "description": "Current chapter progression state."
+          },
+          "goal": {
+            "type": "string",
+            "description": "Primary narrative goal of this chapter."
+          },
+          "dependencies": {
+            "type": "array",
+            "description": "Prerequisite chapters that must be completed first.",
+            "items": {
+              "type": "string",
+              "pattern": "^ch-[a-zA-Z0-9_-]+$"
+            }
+          },
+          "key_characters": {
+            "type": "array",
+            "description": "Main characters that must appear or be progressed.",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          },
+          "required_threads": {
+            "type": "array",
+            "description": "Open threads that this chapter must progress or resolve.",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Last update timestamp in ISO 8601 UTC."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./mutation_log_entry.schema.json",
+  "title": "MutationLogEntry",
+  "description": "Per-line schema for .book/logs/mutations.jsonl entries.",
+  "type": "object",
+  "required": ["ts", "skill", "action", "targets", "retcon"],
+  "properties": {
+    "ts": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Mutation timestamp in ISO 8601 UTC."
+    },
+    "skill": {
+      "type": "string",
+      "enum": [
+        "outline-keeper",
+        "character-weaver",
+        "world-continuity",
+        "session-status-manager",
+        "chapter-preflight",
+        "canon-committer"
+      ],
+      "description": "Skill name that produced the mutation."
+    },
+    "action": {
+      "type": "string",
+      "description": "Action identifier, e.g. commit_chapter or update_outline."
+    },
+    "chapter_id": {
+      "description": "Related chapter ID, or null for non-chapter mutations.",
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^ch-[a-zA-Z0-9_-]+$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "targets": {
+      "type": "array",
+      "description": "List of affected files or entities.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "type": "string",
+      "description": "Human-readable change summary."
+    },
+    "retcon": {
+      "type": "boolean",
+      "description": "Whether this mutation was part of a retcon flow."
+    }
+  },
+  "additionalProperties": false
+}
