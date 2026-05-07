@@ -1,6 +1,6 @@
-# `.book` 数据目录（索引）
+# 数据目录（索引）
 
-本项目是单书模式，所有小说数据都在 `.book/`。
+本项目是单书模式，所有小说数据都在仓库根目录的固定文件夹中。
 
 ## 写作工作流（详细）
 
@@ -33,12 +33,12 @@
 - `characters/`、`relationships/`、`world/`、`timeline/`
 
 建议动作：
-- 在 `.book/drafts/` 生成章节草稿
+- 在 `drafts/` 生成章节草稿
 - 记录本章新增事实候选（例如关系变化、世界规则补充、关键事件）
 - 标注不确定点，等待预检阶段判断
 
 输出结果：
-- `.book/drafts/` 下的草稿文件
+- `drafts/` 下的草稿文件
 - 候选变更列表（角色/关系/世界/时间线）
 
 ### 3. Preflight（提交前预检）
@@ -106,3 +106,4 @@
 - `scene_cards/README.md`
 - `drafts/README.md`
 - `canon/README.md`
+- `_schema/`（JSON Schema 文件目录）
