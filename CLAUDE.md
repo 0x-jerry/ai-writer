@@ -86,7 +86,6 @@
 3. 如有变更，同步更新 `characters/`、`relationships/`、`world/`
 4. 更新 `status/current_status.md`
 5. 在 `status/history/` 追加快照
-6. 在 `logs/` 追加审计日志
 
 输出结果：
 
@@ -118,13 +117,11 @@
 - `timeline/README.md`
 - `relationships/README.md`
 - `status/README.md`
-- `logs/README.md`
 - `style/README.md`
 - `threads/README.md`
 - `scene_cards/README.md`
 - `drafts/README.md`
 - `canon/README.md`
-- `_schema/`（JSON Schema 文件目录）
 
 ## 术语表
 
@@ -192,5 +189,4 @@
 ### Schema 术语
 
 - `$schema`：JSON 文件内指向其 schema 的相对路径字段。
-- `_schema/`：schema 定义目录。
 - `JSONL`：逐行 JSON 文本格式，一行一个对象。
