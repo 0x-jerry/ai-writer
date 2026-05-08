@@ -115,44 +115,45 @@
   - 对圣者的决定拥有劝谏权（但无权否决）
 - 贤议会成员通常从四司司祭或资深高阶祭司中遴选
 
-### 第三层：四司（Four Departments）
+### 第三层：四司 + 衡光卫（Four Departments & Light-Balance Guard）
 
-教会的行政执行层，各设一名**司祭**为负责人。
+第三层包含五个平级机构：四司为行政执行层，衡光卫为武装力量层。
 
-#### 轨仪司（Department of Orbits and Records）
+#### 四司
+
+各设一名**司祭**为负责人，向圣者汇报，同时受贤议会的监督。
+
+**轨仪司**（Department of Orbits and Records）
 - 光轨观测与记录
 - 历法制定与颁布
 - 天象解释
 - 所属人员：林渡尘（光轨记录者）、沈知微（记录助手）
 
-#### 戒律司（Department of Doctrine and Discipline）
+**戒律司**（Department of Doctrine and Discipline）
 - 禁忌与戒律的解释权
 - 审判违规者
 - 判定异端行为
 - 「惩罚之兆」的官方解释由戒律司发布
 
-#### 典藏司（Department of Scriptures and Archives）
+**典藏司**（Department of Scriptures and Archives）
 - 经典的抄写、保管、传承
 - 禁地知识的看守与管理
 - 古籍与历史记录保存
 
-#### 祭祀司（Department of Rites and Ceremonies）
+**祭祀司**（Department of Rites and Ceremonies）
 - 日常祭祀与重大典礼
 - 圣物维护与管理
 - 仪式规程的制定与执行
 
-各司司祭向圣者汇报，同时受贤议会的监督。
+#### 衡光卫（Light-Balance Guard）
 
-### 第四层：衡光卫（Light-Balance Guard）
-
-独立武装力量，直属圣者 + 贤议会共同管辖。
+独立武装力量，直属圣者 + 贤议会共同管辖。卫长地位与司祭平级。
 
 - 职责：神殿域守卫、追捕异端、执行戒律惩罚
-- 卫长地位与司祭平级
 - 圣者对衡光卫有指挥权，贤议会有监督权
 - 卫队成员散布于各层，是教会看得见的权威之手
 
-### 第五层：基层与学徒
+### 第四层：基层祭司
 
 #### 部落祭司
 - 常驻各部落的驻派祭司
@@ -165,7 +166,7 @@
 - 检查戒律执行情况
 - 通常是晋升为司祭前的历练岗位
 
-#### 学徒与见习
+### 第五层：学徒与见习
 - 各司的学徒/助手（如记录助手、见习祭司）
 - 衡光卫新兵
 - 神殿杂役
