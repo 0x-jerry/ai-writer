@@ -118,7 +118,6 @@
 - `timeline/README.md`
 - `relationships/README.md`
 - `status/README.md`
-- `indexes/README.md`
 - `logs/README.md`
 - `style/README.md`
 - `threads/README.md`

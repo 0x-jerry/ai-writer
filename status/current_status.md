@@ -28,7 +28,6 @@
 | world/ | overview.md（索引）、cosmology.md（弥光教）、decay.md（衰减记录） |
 | characters/ | overview.md（索引+关系图）+ 8个角色文件 |
 | outline/ | master_outline.md、arcs/arc-001.md、chapters/ch-001~012.md |
-| indexes/ | outline_index.json |
 
 ## 未定项
 - 贤议会5名成员

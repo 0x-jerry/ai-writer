@@ -3,7 +3,6 @@
 JSON Schema 目录，定义本项目 JSON/JSONL 的数据结构约束。
 
 当前 schema：
-- `outline_index.schema.json`
 - `status_history.schema.json`
 - `mutation_log_entry.schema.json`（对应 `logs/mutations.jsonl` 的单行对象）
 - `retcon_log_entry.schema.json`（对应 `logs/retcons.jsonl` 的单行对象）

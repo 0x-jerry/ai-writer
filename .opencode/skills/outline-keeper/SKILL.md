@@ -11,17 +11,15 @@
 - `outline/master_outline.md`
 - `outline/arcs/`
 - `outline/chapters/`
-- `indexes/outline_index.json`
 
 ## 执行步骤
 1. 校验目标 Arc/Chapter 是否存在，若不存在生成最小模板。
 2. 更新章节目标、前置依赖、完成状态。
-3. 同步更新 `outline_index.json`。
-4. 返回下一章候选及原因（基于未完成且依赖满足）。
+3. 返回下一章候选及原因（基于未完成且依赖满足）。
 
 ## 输出格式
 - 行动清单
-- 补丁文本（涉及 `master_outline.md`、arc/chapter 文件、`outline_index.json`）
+- 补丁文本（涉及 `master_outline.md`、arc/chapter 文件）
 - 风险说明（依赖缺失/重复目标/冲突）
 
 ## 模板（章节节点）
