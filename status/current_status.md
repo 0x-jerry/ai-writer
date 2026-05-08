@@ -1,13 +1,23 @@
 # 当前小说状态
 
-- 世界观阶段：已完成基础设定
-- 当前 Arc: 未设置
-- 当前 Chapter: 未设置
-- 主线推进: 世界观已构建——微界（球体直径127m、垂直城市、双光源）
-- 关键角色状态: 未设置
-- 未回收线程数量: 0
+- 当前 Arc: arc-001（归零）— planned
+- 当前 Chapter: ch-001（光轨之上）— planned
+- 主线推进: 第一部「归零」规划完成（12章）。林渡尘从发现光轨衰减到被教会通缉的完整弧线
+- 已规划角色:
+  - 林渡尘（主角，光轨记录者）
+  - 沈知微（女主，记录助手）
+  - 青艾（医者，亡族之医）
+- 未回收线程数量: 0（尚无线程被开启）
+- 幕后设定: 五人逃亡小组中两人另有目的（待定）
 - 最近一次更新时间: 2026-05-08
-- 已建立文档：
-  - `world/overview.md` — 世界总览与物理设定
+- 已建立文档:
+  - `world/overview.md` — 世界总览
   - `world/cosmology.md` — 弥光教信仰体系
   - `world/decay.md` — 神秘衰减记录
+  - `characters/lin_duchen.md` — 主角林渡尘
+  - `characters/shen_zhiwei.md` — 女主角沈知微
+  - `characters/qing_ai.md` — 医者青艾
+  - `outline/master_outline.md` — 主线总纲
+  - `outline/arcs/arc-001.md` — 第一部「归零」Arc 规划
+  - `outline/chapters/ch-001.md ~ ch-012.md` — 12章详细规划
+  - `indexes/outline_index.json` — 大纲索引

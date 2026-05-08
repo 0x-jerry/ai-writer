@@ -1,6 +1,111 @@
 {
   "$schema": "../_schema/outline_index.schema.json",
-  "arcs": [],
-  "chapters": [],
-  "updated_at": null
+  "arcs": [
+    {
+      "arc_id": "arc-001",
+      "title": "归零",
+      "status": "planned",
+      "start_chapter_id": "ch-001",
+      "end_chapter_id": "ch-012"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter_id": "ch-001",
+      "arc_id": "arc-001",
+      "title": "光轨之上",
+      "status": "planned",
+      "goal": "介绍林渡尘的日常和光轨记录工作，建立微界日常面貌，展示渡尘与知微的关系",
+      "dependencies": []
+    },
+    {
+      "chapter_id": "ch-002",
+      "arc_id": "arc-001",
+      "title": "偏差",
+      "status": "planned",
+      "goal": "渡尘发现光轨数据的异常偏差，确认衰减趋势的存在",
+      "dependencies": ["ch-001"]
+    },
+    {
+      "chapter_id": "ch-003",
+      "arc_id": "arc-001",
+      "title": "上报",
+      "status": "planned",
+      "goal": "渡尘上报发现被教会驳回，首次正面冲突，渡尘决定独自调查",
+      "dependencies": ["ch-002"]
+    },
+    {
+      "chapter_id": "ch-004",
+      "arc_id": "arc-001",
+      "title": "裂隙降临",
+      "status": "planned",
+      "goal": "渡尘亲身经历重力裂隙事件，青艾首次登场",
+      "dependencies": ["ch-003"]
+    },
+    {
+      "chapter_id": "ch-005",
+      "arc_id": "arc-001",
+      "title": "暗流",
+      "status": "planned",
+      "goal": "渡尘秘密调查历史记录发现被掩盖的证据，知微加入",
+      "dependencies": ["ch-004"]
+    },
+    {
+      "chapter_id": "ch-006",
+      "arc_id": "arc-001",
+      "title": "归零日",
+      "status": "planned",
+      "goal": "归零日推算完成，渡尘和知微决定接触青艾",
+      "dependencies": ["ch-005"]
+    },
+    {
+      "chapter_id": "ch-007",
+      "arc_id": "arc-001",
+      "title": "医者之言",
+      "status": "planned",
+      "goal": "青艾加入，揭示裂隙模式与部落线索，三人决定深入禁忌之地",
+      "dependencies": ["ch-006"]
+    },
+    {
+      "chapter_id": "ch-008",
+      "arc_id": "arc-001",
+      "title": "追猎",
+      "status": "planned",
+      "goal": "教会开始内部调查，压迫升级，途中加入者出现",
+      "dependencies": ["ch-007"]
+    },
+    {
+      "chapter_id": "ch-009",
+      "arc_id": "arc-001",
+      "title": "五人",
+      "status": "planned",
+      "goal": "五人集结讨论潜入方案，行动开始",
+      "dependencies": ["ch-008"]
+    },
+    {
+      "chapter_id": "ch-010",
+      "arc_id": "arc-001",
+      "title": "禁忌之地",
+      "status": "planned",
+      "goal": "五人进入禁忌之地，发现关于世界真相的古代证据",
+      "dependencies": ["ch-009"]
+    },
+    {
+      "chapter_id": "ch-011",
+      "arc_id": "arc-001",
+      "title": "见神",
+      "status": "planned",
+      "goal": "抵达最深处，目睹壳外宇宙和『神』，教会追兵赶到",
+      "dependencies": ["ch-010"]
+    },
+    {
+      "chapter_id": "ch-012",
+      "arc_id": "arc-001",
+      "title": "渡尘",
+      "status": "planned",
+      "goal": "逃亡开始，内部矛盾暴露，第一部以五人踏上轨道收尾",
+      "dependencies": ["ch-011"]
+    }
+  ],
+  "updated_at": "2026-05-08T00:00:00Z"
 }
