@@ -3,21 +3,37 @@
 - 当前 Arc: arc-001（归零）— planned
 - 当前 Chapter: ch-001（光轨之上）— planned
 - 主线推进: 第一部「归零」规划完成（12章）。林渡尘从发现光轨衰减到被教会通缉的完整弧线
-- 已规划角色:
-  - 林渡尘（主角，光轨记录者）
-  - 沈知微（女主，记录助手）
-  - 青艾（医者，亡族之医）
-- 未回收线程数量: 0（尚无线程被开启）
-- 幕后设定: 五人逃亡小组中两人另有目的（待定）
-- 最近一次更新时间: 2026-05-08
-- 已建立文档:
-  - `world/overview.md` — 世界总览
-  - `world/cosmology.md` — 弥光教信仰体系
-  - `world/decay.md` — 神秘衰减记录
-  - `characters/lin_duchen.md` — 主角林渡尘
-  - `characters/shen_zhiwei.md` — 女主角沈知微
-  - `characters/qing_ai.md` — 医者青艾
-  - `outline/master_outline.md` — 主线总纲
-  - `outline/arcs/arc-001.md` — 第一部「归零」Arc 规划
-  - `outline/chapters/ch-001.md ~ ch-012.md` — 12章详细规划
-  - `indexes/outline_index.json` — 大纲索引
+
+## 已规划角色（11人）
+
+### 五人小组
+- 林渡尘（主角，光轨记录者）
+- 沈知微（女主，记录助手）
+- 青艾（医者，亡族之医，知晓渡尘身世）
+- 卫平（衡光卫士兵，严霜卧底，可能倒戈）
+- 寻微（祭祀司信使，真正目的是见「神」）
+
+### 弥光教体系
+- 第三十二代圣者（最高领袖，恐惧的囚徒）
+- 章典（轨仪司司祭，渡尘上司，刻板奉行者）
+- 严霜（戒律司司祭，狂热信徒，追捕推动者）
+- 青垣（典藏司司祭，禁地守门人）
+- 言古（祭祀司司祭，暗中知情者）
+- 严铮（衡光卫卫长，铁血军人，追捕执行者）
+
+## 设定文件索引
+
+| 目录 | 文件 |
+|------|------|
+| world/ | overview.md（索引）、cosmology.md（弥光教）、decay.md（衰减记录） |
+| characters/ | overview.md（索引+关系图）+ 8个角色文件 |
+| outline/ | master_outline.md、arcs/arc-001.md、chapters/ch-001~012.md |
+| indexes/ | outline_index.json |
+
+## 未定项
+- 贤议会5名成员
+- 部落体系（名称、分布、文化）
+- 线程追踪（threads/ 目录待建）
+- 未回收线程数量: 0
+
+## 最近一次更新时间: 2026-05-08
