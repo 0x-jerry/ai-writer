@@ -6,9 +6,16 @@
 
 在写入任何文件之前，一定要先仔细阅读对应文件夹的 README 文件。
 
+## 写作提示
+
+- 每次场景之间的转换都需要先过渡一下。
+- 每章开始的时候也需要先过渡一下。
+
 ## 写作工作流（详细）
 
 默认流程：`Plan -> Draft -> Preflight -> Commit`
+
+**禁止自动进入下一个流程，所有流程转换必须先询问用户，同意之后才能执行。**
 
 ### 1. Plan（规划）
 
@@ -173,9 +180,6 @@
 
 - `current_status.md`：唯一实时全局状态文件。
 - `status/history/`：状态历史快照目录。
-- `status_history.json`：状态快照索引。
-- `mutations.jsonl`：关键变更审计日志（逐行 JSON）。
-- `retcons.jsonl`：retcon 审计日志（逐行 JSON）。
 
 ### 技能术语
 
@@ -185,8 +189,3 @@
 - `session-status-manager`：维护当前状态与历史快照。
 - `chapter-preflight`：执行提交前一致性闸门。
 - `canon-committer`：将通过预检内容入典并写审计日志。
-
-### Schema 术语
-
-- `$schema`：JSON 文件内指向其 schema 的相对路径字段。
-- `JSONL`：逐行 JSON 文本格式，一行一个对象。
