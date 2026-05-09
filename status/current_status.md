@@ -26,15 +26,20 @@
 
 | 目录 | 文件 |
 |------|------|
-| world/ | overview.md（索引）、cosmology.md（弥光教）、decay.md（衰减记录） |
+| world/ | overview.md（索引）、cosmology.md（弥光教）、decay.md（衰减记录）、temple_district.md（神殿域结构） |
 | characters/ | overview.md（索引+关系图）+ 8个角色文件 |
 | outline/ | master_outline.md、arcs/arc-001.md、chapters/ch-001~012.md |
-| timeline/ | world_history.md |
+| timeline/ | world_history.md（微界时间线） |
+| threads/ | thr-001（光轨衰减）、thr-002（渡尘身世）、thr-003（知微直觉） |
+| scene_cards/ | sc-ch001-01~04（ch-001 四场景卡） |
+| relationships/ | rel-ld-szw（林渡尘↔沈知微） |
+| style/ | voice.md（文风圣经） |
 
 ## 未定项
 - 贤议会5名成员
 - 部落体系（名称、分布、文化）
-- 线程追踪（threads/ 目录待建）
-- 未回收线程数量: 0
+- 各巨柱/区域命名
+- 自然资源与经济体系
+- 未回收线程数量: 3
 
-## 最近一次更新时间: 2026-05-08
+## 最近一次更新时间: 2026-05-09
