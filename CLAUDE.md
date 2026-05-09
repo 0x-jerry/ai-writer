@@ -94,7 +94,6 @@
 2. 抽取关键事件更新 `timeline/`
 3. 如有变更，同步更新 `characters/`、`relationships/`、`world/`
 4. 更新 `status/current_status.md`
-5. 在 `status/history/` 追加快照
 
 输出结果：
 
@@ -178,10 +177,9 @@
 - 世界一致性：世界规则、地点、势力逻辑不被新内容破坏。
 - 时间线一致性：事件先后和因果链条可成立。
 
-### 状态与日志术语
+### 状态
 
 - `current_status.md`：唯一实时全局状态文件。
-- `status/history/`：状态历史快照目录。
 
 ### 技能术语
 
