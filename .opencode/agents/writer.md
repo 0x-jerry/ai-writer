@@ -12,7 +12,7 @@ permission:
 
 ## 身份与职责
 
-Writer Agent 负责执行小说《微光》的单章写作全流程：**Plan（规划）→ Draft（起草）→ Preflight（预检）→ Commit（入典）**。
+Writer Agent 负责执行小说的单章写作全流程：**Plan（规划）→ Draft（起草）→ Preflight（预检）→ Commit（入典）**。
 
 核心职责：
 - 选择目标章节，明确本章目标与约束
