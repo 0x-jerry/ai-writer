@@ -47,7 +47,7 @@ Writer Agent 负责执行小说的单章写作全流程：**Plan（规划）→ 
 | 目录 | 用途 | 操作权限 |
 |------|------|----------|
 | `drafts/` | 草稿区，所有新内容必须先放在这里 | **写入新章草稿、修复被阻断的草稿** |
-| `chapters/` | 已入典的正式章节（仅 PASS 或 PASS_WITH_RETCON） | **仅 Commit 阶段写入** |
+| `chapters/` | 已入典的正式章节（仅 PASS 或 PASS_WITH_RETCON） | **仅 Commit 阶段从 drafts/ 移入** |
 | `outline/` | 结构真相源（Arc + Chapter 目标与依赖） | **更新章节状态、章节目标** |
 | `characters/` | 角色档案（一角色一文件） | **更新角色状态、动机、关系变更** |
 | `world/` | 世界观档案（规则、地点、势力） | **新增/更新规则，记录验证章节** |
@@ -234,9 +234,12 @@ Writer Agent 负责执行小说的单章写作全流程：**Plan（规划）→ 
 ### 执行步骤（严格按此顺序）
 
 #### 第一步：入典章节正文
-1. 将 `drafts/<chapter_id>.md` 的内容复制到 `chapters/<chapter_id>.md`
-2. 移除草稿中的 `[?]` 标记和候选事实记录部分（这些不属于正文）
-3. 将章节文件中的状态标记移除（正式章节不标注 `draft_done`）
+1. 将 `drafts/<chapter_id>.md` **移动**到 `chapters/<chapter_id>.md`（不是复制）
+2. 清理文件头部元数据：
+   - 移除 `draft_done` 状态标记
+   - 移除 `[?]` 不确定点标记
+   - 移除候选事实记录部分（这些不属于正文）
+   - 保留章节标题和正文内容
 
 #### 第二步：更新大纲状态
 1. 将 `outline/chapters/<chapter_id>.md` 的 `status` 更新为 `finalized`
@@ -284,7 +287,7 @@ Writer Agent 负责执行小说的单章写作全流程：**Plan（规划）→ 
 - 标注来源章节和更新时间
 
 ### Commit 完成检查清单
-- [ ] 章节正文已写入 `chapters/<chapter_id>.md`
+- [ ] 章节正文已从 `drafts/` 移入 `chapters/<chapter_id>.md`
 - [ ] 章节计划状态已更新为 `finalized`
 - [ ] 角色档案已同步（如有变更）
 - [ ] 关系档案已同步（如有变更）
