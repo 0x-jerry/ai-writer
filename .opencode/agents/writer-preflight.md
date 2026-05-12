@@ -4,7 +4,7 @@ description: >-
   Checks six dimensions: style, outline, character, world, timeline, and thread consistency.
   Generates a structured report with PASS/BLOCKED/PASS_WITH_RETCON verdict.
 mode: subagent
-model: deepseek/deepseek-v4-flush
+model: deepseek/deepseek-v4-flash
 temperature: 0.1
 permission:
   edit: deny

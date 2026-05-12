@@ -4,6 +4,7 @@ description: >-
   Executes the full chapter writing workflow: Plan → Draft → Preflight → Commit.
   Read for project conventions, directory index, style constraints, and operational procedures.
 mode: primary
+model: deepseek/deepseek-v4-flash
 temperature: 0.4
 permission:
   edit: allow
